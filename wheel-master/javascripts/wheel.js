@@ -320,7 +320,6 @@ var wheel = {
       $('#counter').html((wheel.frames / duration * 1000) + ' FPS');
       var segmentbeingpointedat = wheel.segments.length - Math.floor((wheel.angleCurrent / (Math.PI * 2)) * wheel.segments.length) - 1;
       var selectedStudent = wheel.segments[segmentbeingpointedat];
-      //^ remove when possible
       handleStudentAction(selectedStudent);
       createStarEffect();
     }
@@ -368,6 +367,7 @@ var wheel = {
       var color = colorsimgonnause[i]
       colorCache.push(color);
     }
+	let testvar = colorCache
     wheel.colorCache = colorCache;
 	
     wheel.draw();
